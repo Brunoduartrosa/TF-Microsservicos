@@ -30,9 +30,11 @@ services:
     build:
       context: ./asscache
     ports:
-      - 8082:8082
+      - 8082
     networks:
       - eureka
+    deploy:
+      replicas: 3
     depends_on:
       - nameserver
       - scaa
