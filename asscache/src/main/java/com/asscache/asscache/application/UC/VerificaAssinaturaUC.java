@@ -1,18 +1,20 @@
 package com.asscache.asscache.application.UC;
 
 
-import com.asscache.asscache.domain.service.AssinaturaService;
+import com.asscache.asscache.domain.data.StatusAssinatura;
 import org.springframework.stereotype.Component;
+
+import java.time.LocalDate;
 
 @Component
 public class VerificaAssinaturaUC {
-    private AssinaturaService assinaturaService;
+private StatusAssinatura statusAssinatura;
 
-    public VerificaAssinaturaUC(AssinaturaService assinaturaService){
-        this.assinaturaService = assinaturaService;
+    public VerificaAssinaturaUC(StatusAssinatura statusAssinatura){
+        this.statusAssinatura = statusAssinatura;
     }
 
-    public boolean run(long codAssinatura){
-        return assinaturaService.verificaAssinatura(codAssinatura);
+    public boolean verificaAssinaturaStatus(long codass){
+        return statusAssinatura.verificaFimAssinatura(codass).isAfter(LocalDate.now());
     }
 }
