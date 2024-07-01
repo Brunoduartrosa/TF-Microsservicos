@@ -1,0 +1,8 @@
+com\asscache\asscache\AsscacheApplication.class
+com\asscache\asscache\domain\repository\IAssinaturaRepository.class
+com\asscache\asscache\application\UC\VerificaAssinaturaUC.class
+com\asscache\asscache\domain\entities\AssinaturaModel.class
+com\asscache\asscache\domain\service\AssinaturaService.class
+com\asscache\asscache\domain\repository\StatusAssinatura.class
+com\asscache\asscache\repository\AssinaturaMemRepository.class
+com\asscache\asscache\controller\AssinaturaController.class
