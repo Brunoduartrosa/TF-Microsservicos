@@ -21,4 +21,7 @@ public class AssinaturaModel {
     }
 
 
+    public void setFimVigencia(LocalDate fimVigencia) {
+        this.fimVigencia = fimVigencia;
+    }
 }

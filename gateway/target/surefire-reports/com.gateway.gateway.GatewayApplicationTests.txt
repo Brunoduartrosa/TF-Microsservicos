@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.gateway.gateway.GatewayApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.600 s -- in com.gateway.gateway.GatewayApplicationTests

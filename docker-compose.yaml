@@ -1,0 +1,52 @@
+services:
+  gateway:
+    environment:
+      - EUREKA_SERVICE_URL=http://nameserver:8761/eureka/
+    build:
+      context: ./gateway
+    ports:
+      - 8765:8765
+    networks:
+      - eureka
+    depends_on:
+      - nameserver
+      - scaa
+      - asscache
+  nameserver:
+    environment:
+      - EUREKA_SERVICE_URL=http://nameserver:8761/eureka/
+    build:
+      context: ./nameserver
+    ports:
+      - 8761:8761
+    hostname: nameserver
+    networks:
+      - eureka
+
+  asscache:
+    environment:
+      - EUREKA_SERVICE_URL=http://nameserver:8761/eureka/
+    build:
+      context: ./asscache
+    ports:
+      - 8082:8082
+    networks:
+      - eureka
+    depends_on:
+      - nameserver
+      - scaa
+  scaa:
+    environment:
+      - EUREKA_SERVICE_URL=http://nameserver:8761/eureka/
+    build:
+      context: ./scaa
+    ports:
+      - 8081:8081
+    networks:
+      - eureka
+    depends_on:
+      - nameserver
+
+networks:
+  eureka:
+    driver: bridge
