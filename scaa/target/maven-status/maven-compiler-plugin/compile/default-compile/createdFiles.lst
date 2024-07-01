@@ -15,11 +15,11 @@ com\monolitoclean\scaa\application\usecase\assinatura\CadastraAssinaturaUC.class
 com\monolitoclean\scaa\controllers\aplicativos\AplicativoController.class
 com\monolitoclean\scaa\controllers\clientes\ClienteController.class
 com\monolitoclean\scaa\domain\repository\IPagamentoRepository.class
-com\monolitoclean\scaa\AssinaturaProxy.class
 com\monolitoclean\scaa\domain\repository\IClienteRepository.class
 com\monolitoclean\scaa\application\usecase\pagamento\RegistraPagamentoUC.class
 com\monolitoclean\scaa\controllers\pagamento\PagamentoController.class
 com\monolitoclean\scaa\application\usecase\assinatura\ListarAssinaturasDoAppUC.class
+com\monolitoclean\scaa\rabbitmq\RabbitMQConfig.class
 com\monolitoclean\scaa\repository\PagamentoMemRepository.class
 com\monolitoclean\scaa\application\usecase\assinatura\VerificaAssinaturaUC.class
 com\monolitoclean\scaa\application\dtos\AplicativoDTO.class

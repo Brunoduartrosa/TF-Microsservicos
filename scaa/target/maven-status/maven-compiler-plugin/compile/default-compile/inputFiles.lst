@@ -15,7 +15,6 @@ C:\Users\gabri\programacao\PROJETOS\microsservices-tf\TF-Microsservicos\scaa\src
 C:\Users\gabri\programacao\PROJETOS\microsservices-tf\TF-Microsservicos\scaa\src\main\java\com\monolitoclean\scaa\application\usecase\cliente\CadastraClienteUC.java
 C:\Users\gabri\programacao\PROJETOS\microsservices-tf\TF-Microsservicos\scaa\src\main\java\com\monolitoclean\scaa\application\usecase\cliente\ClientesCadastradosUC.java
 C:\Users\gabri\programacao\PROJETOS\microsservices-tf\TF-Microsservicos\scaa\src\main\java\com\monolitoclean\scaa\application\usecase\pagamento\RegistraPagamentoUC.java
-C:\Users\gabri\programacao\PROJETOS\microsservices-tf\TF-Microsservicos\scaa\src\main\java\com\monolitoclean\scaa\AssinaturaProxy.java
 C:\Users\gabri\programacao\PROJETOS\microsservices-tf\TF-Microsservicos\scaa\src\main\java\com\monolitoclean\scaa\controllers\aplicativos\AplicativoController.java
 C:\Users\gabri\programacao\PROJETOS\microsservices-tf\TF-Microsservicos\scaa\src\main\java\com\monolitoclean\scaa\controllers\assinaturas\AssinaturaController.java
 C:\Users\gabri\programacao\PROJETOS\microsservices-tf\TF-Microsservicos\scaa\src\main\java\com\monolitoclean\scaa\controllers\clientes\ClienteController.java
@@ -34,6 +33,7 @@ C:\Users\gabri\programacao\PROJETOS\microsservices-tf\TF-Microsservicos\scaa\src
 C:\Users\gabri\programacao\PROJETOS\microsservices-tf\TF-Microsservicos\scaa\src\main\java\com\monolitoclean\scaa\domain\services\AssinaturaService.java
 C:\Users\gabri\programacao\PROJETOS\microsservices-tf\TF-Microsservicos\scaa\src\main\java\com\monolitoclean\scaa\domain\services\ClienteService.java
 C:\Users\gabri\programacao\PROJETOS\microsservices-tf\TF-Microsservicos\scaa\src\main\java\com\monolitoclean\scaa\domain\services\PagamentoService.java
+C:\Users\gabri\programacao\PROJETOS\microsservices-tf\TF-Microsservicos\scaa\src\main\java\com\monolitoclean\scaa\rabbitmq\RabbitMQConfig.java
 C:\Users\gabri\programacao\PROJETOS\microsservices-tf\TF-Microsservicos\scaa\src\main\java\com\monolitoclean\scaa\repository\AplicativoMemRepository.java
 C:\Users\gabri\programacao\PROJETOS\microsservices-tf\TF-Microsservicos\scaa\src\main\java\com\monolitoclean\scaa\repository\AssinaturaMemRepository.java
 C:\Users\gabri\programacao\PROJETOS\microsservices-tf\TF-Microsservicos\scaa\src\main\java\com\monolitoclean\scaa\repository\ClienteMemRepository.java
