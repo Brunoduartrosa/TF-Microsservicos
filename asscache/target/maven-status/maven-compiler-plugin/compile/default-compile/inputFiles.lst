@@ -1,0 +1,15 @@
+C:\Users\gabri\programacao\PROJETOS\microsservices-tf\TF-Microsservicos\asscache\src\main\java\com\asscache\asscache\application\UC\VerificaAssinaturaUC.java
+C:\Users\gabri\programacao\PROJETOS\microsservices-tf\TF-Microsservicos\asscache\src\main\java\com\asscache\asscache\AsscacheApplication.java
+C:\Users\gabri\programacao\PROJETOS\microsservices-tf\TF-Microsservicos\asscache\src\main\java\com\asscache\asscache\config\RabbitMQConfig.java
+C:\Users\gabri\programacao\PROJETOS\microsservices-tf\TF-Microsservicos\asscache\src\main\java\com\asscache\asscache\consumer\AssinaturaRequest.java
+C:\Users\gabri\programacao\PROJETOS\microsservices-tf\TF-Microsservicos\asscache\src\main\java\com\asscache\asscache\consumer\PagamentoRequest.java
+C:\Users\gabri\programacao\PROJETOS\microsservices-tf\TF-Microsservicos\asscache\src\main\java\com\asscache\asscache\controller\AssinaturaController.java
+C:\Users\gabri\programacao\PROJETOS\microsservices-tf\TF-Microsservicos\asscache\src\main\java\com\asscache\asscache\domain\entities\AssinaturaModel.java
+C:\Users\gabri\programacao\PROJETOS\microsservices-tf\TF-Microsservicos\asscache\src\main\java\com\asscache\asscache\domain\repository\IAssinaturaRepository.java
+C:\Users\gabri\programacao\PROJETOS\microsservices-tf\TF-Microsservicos\asscache\src\main\java\com\asscache\asscache\domain\repository\StatusAssinatura.java
+C:\Users\gabri\programacao\PROJETOS\microsservices-tf\TF-Microsservicos\asscache\src\main\java\com\asscache\asscache\domain\service\AssinaturaService.java
+C:\Users\gabri\programacao\PROJETOS\microsservices-tf\TF-Microsservicos\asscache\src\main\java\com\asscache\asscache\producer\AssinaturaErroProdutor.java
+C:\Users\gabri\programacao\PROJETOS\microsservices-tf\TF-Microsservicos\asscache\src\main\java\com\asscache\asscache\producer\AssinaturaSucessoProdutor.java
+C:\Users\gabri\programacao\PROJETOS\microsservices-tf\TF-Microsservicos\asscache\src\main\java\com\asscache\asscache\producer\PagamentoErroProdutor.java
+C:\Users\gabri\programacao\PROJETOS\microsservices-tf\TF-Microsservicos\asscache\src\main\java\com\asscache\asscache\producer\PagamentoSucessoProdutor.java
+C:\Users\gabri\programacao\PROJETOS\microsservices-tf\TF-Microsservicos\asscache\src\main\java\com\asscache\asscache\repository\AssinaturaMemRepository.java

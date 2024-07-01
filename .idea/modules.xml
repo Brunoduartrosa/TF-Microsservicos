@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/gateway-nameserver-api-cache.iml" filepath="$PROJECT_DIR$/.idea/gateway-nameserver-api-cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/TF-Microsservicos.iml" filepath="$PROJECT_DIR$/.idea/TF-Microsservicos.iml" />
     </modules>
   </component>
 </project>

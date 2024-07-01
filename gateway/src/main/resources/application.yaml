@@ -16,15 +16,18 @@ spring:
             - Path=/scaa/**
           filters:
             - RewritePath=/scaa/?(?<remaining>.*), /$\{remaining}
+        - id: asscache
+          uri: lb://asscache
+          predicates:
+            - Path=/asscache/**
+          filters:
+            - RewritePath=/asscache/?(?<remaining>.*), /$\{remaining}
   main:
     web-application-type: reactive
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
-  instance:
-    preferIpAddress: true
-    ipAddress: 127.0.0.1
+      defaultZone: ${EUREKA_SERVICE_URL:http://localhost:8761/eureka/}
 
 management:
   endpoints:
