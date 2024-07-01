@@ -26,6 +26,7 @@ services:
   asscache:
     environment:
       - EUREKA_SERVICE_URL=http://nameserver:8761/eureka/
+      - RABBITMQCONFIG_SERVICE_URL=rabbitmq
     build:
       context: ./asscache
     ports:
@@ -35,9 +36,12 @@ services:
     depends_on:
       - nameserver
       - scaa
+      - rabbitmq
   scaa:
     environment:
       - EUREKA_SERVICE_URL=http://nameserver:8761/eureka/
+      - RABBITMQCONFIG_SERVICE_URL=rabbitmq
+
     build:
       context: ./scaa
     ports:
@@ -46,7 +50,16 @@ services:
       - eureka
     depends_on:
       - nameserver
-
+      - rabbitmq
+  rabbitmq:
+    image: rabbitmq:3.8.6-management
+    ports:
+      - 5672:5672
+      - 15672:15672
+    networks:
+      - rabbitmq
 networks:
   eureka:
+    driver: bridge
+  rabbitmq:
     driver: bridge

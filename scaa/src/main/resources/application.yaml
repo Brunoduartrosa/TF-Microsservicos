@@ -4,6 +4,8 @@ spring:
   cloud:
     config:
       enabled: false
+  rabbitmq:
+    host: ${RABBITMQCONFIG_SERVICE_URL:localhost}
 server:
   port: 8081
 management:

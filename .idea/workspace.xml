@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21053c24-aad3-4bcb-81e9-7bb2db7a7477" name="Changes" comment="Fazendo o RabbitMQ funcionar corretamente" />
+    <list default="true" id="21053c24-aad3-4bcb-81e9-7bb2db7a7477" name="Changes" comment="arquivos">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asscache/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/asscache/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scaa/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/scaa/src/main/resources/application.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,10 +36,10 @@
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="8ab60677-49c9-4aa3-bfee-b957c6329df6" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -40,9 +47,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2icGntmRXPHNVoVVk9JicZBfZ6y" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -71,7 +78,7 @@
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
     "vue.rearranger.settings.migration": "true"
   }
@@ -142,8 +149,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ScaaApplication" />
         <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Spring Boot.ScaaApplication" />
         <item itemvalue="Spring Boot.AsscacheApplication" />
         <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="Spring Boot.ScaaApplication" />
@@ -167,6 +174,8 @@
       <option name="presentableId" value="Default" />
       <updated>1719782621350</updated>
       <workItem from="1719782622801" duration="12067000" />
+      <workItem from="1719797866051" duration="179000" />
+      <workItem from="1719798051253" duration="1466000" />
     </task>
     <task id="LOCAL-00001" summary="Fazendo o RabbitMQ funcionar corretamente">
       <option name="closed" value="true" />
@@ -176,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719794758104</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="arquivos">
+      <option name="closed" value="true" />
+      <created>1719798014588</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1719798014588</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +224,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fazendo o RabbitMQ funcionar corretamente" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fazendo o RabbitMQ funcionar corretamente" />
+    <MESSAGE value="arquivos" />
+    <option name="LAST_COMMIT_MESSAGE" value="arquivos" />
   </component>
 </project>
