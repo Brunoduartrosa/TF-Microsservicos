@@ -5,23 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21053c24-aad3-4bcb-81e9-7bb2db7a7477" name="Changes" comment="arquivos">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asscache/target/asscache-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/asscache/target/asscache-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asscache/target/asscache-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/asscache/target/asscache-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asscache/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/asscache/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asscache/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/asscache/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asscache/target/surefire-reports/TEST-com.asscache.asscache.AsscacheApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/asscache/target/surefire-reports/TEST-com.asscache.asscache.AsscacheApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asscache/target/surefire-reports/com.asscache.asscache.AsscacheApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/asscache/target/surefire-reports/com.asscache.asscache.AsscacheApplicationTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/target/gateway-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/target/gateway-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/target/gateway-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/target/gateway-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/target/surefire-reports/TEST-com.gateway.gateway.GatewayApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/target/surefire-reports/TEST-com.gateway.gateway.GatewayApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/target/surefire-reports/com.gateway.gateway.GatewayApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/target/surefire-reports/com.gateway.gateway.GatewayApplicationTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scaa/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/scaa/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scaa/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/scaa/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scaa/target/scaa-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/scaa/target/scaa-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scaa/target/scaa-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/scaa/target/scaa-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scaa/target/surefire-reports/TEST-com.monolitoclean.scaa.ScaaApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scaa/target/surefire-reports/TEST-com.monolitoclean.scaa.ScaaApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scaa/target/surefire-reports/com.monolitoclean.scaa.ScaaApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/scaa/target/surefire-reports/com.monolitoclean.scaa.ScaaApplicationTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asscache/src/main/java/com/asscache/asscache/config/RabbitMQConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/asscache/src/main/java/com/asscache/asscache/config/RabbitMQConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asscache/src/main/java/com/asscache/asscache/consumer/AssinaturaRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/asscache/src/main/java/com/asscache/asscache/consumer/AssinaturaRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asscache/src/main/java/com/asscache/asscache/domain/data/StatusAssinatura.java" beforeDir="false" afterPath="$PROJECT_DIR$/asscache/src/main/java/com/asscache/asscache/domain/data/StatusAssinatura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asscache/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/asscache/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asscache/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/asscache/target/classes/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asscache/target/classes/com/asscache/asscache/consumer/AssinaturaRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/asscache/target/classes/com/asscache/asscache/consumer/AssinaturaRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scaa/src/main/java/com/monolitoclean/scaa/controllers/assinaturas/AssinaturaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/scaa/src/main/java/com/monolitoclean/scaa/controllers/assinaturas/AssinaturaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scaa/src/main/java/com/monolitoclean/scaa/rabbitmq/RabbitMQConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/scaa/src/main/java/com/monolitoclean/scaa/rabbitmq/RabbitMQConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scaa/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/scaa/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scaa/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/scaa/target/classes/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +46,13 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -85,6 +87,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "MavenSettings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -102,7 +105,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.GatewayApplication">
     <configuration name="AsscacheApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="asscache" />
@@ -152,12 +155,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Spring Boot.ScaaApplication" />
+        <item itemvalue="Spring Boot.AsscacheApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17890.1" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17890.1" />
       </set>
     </attachedChunks>
   </component>
@@ -172,6 +182,8 @@
       <workItem from="1719782622801" duration="12067000" />
       <workItem from="1719797866051" duration="179000" />
       <workItem from="1719798051253" duration="1466000" />
+      <workItem from="1719873319073" duration="2269000" />
+      <workItem from="1719957022278" duration="3522000" />
     </task>
     <task id="LOCAL-00001" summary="Fazendo o RabbitMQ funcionar corretamente">
       <option name="closed" value="true" />

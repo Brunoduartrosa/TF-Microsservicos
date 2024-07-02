@@ -16,7 +16,7 @@ public class AssinaturaRequest {
         this.statusAssinatura = statusAssinatura;
     }
 
-    @RabbitListener(queues = "#{rabbitMQConfig.getQueueName()}")
+    @RabbitListener(queues = "atualiza-assinatura-queue")
     public void receberAtualizacaoStatusAssinatura(@Payload AtualizacaoStatusAssinatura atualizacaoStatusAssinatura){
         statusAssinatura.atualizaStatusAssinatura(atualizacaoStatusAssinatura.codass(), atualizacaoStatusAssinatura.novoFimVigencia());
     }

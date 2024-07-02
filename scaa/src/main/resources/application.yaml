@@ -6,6 +6,8 @@ spring:
       enabled: false
   rabbitmq:
     host: ${RABBITMQCONFIG_SERVICE_URL:localhost}
+    username: guest
+    password: guest
 server:
   port: 8081
 management:

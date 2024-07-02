@@ -3,9 +3,8 @@ package com.monolitoclean.scaa.controllers.assinaturas;
 import com.monolitoclean.scaa.application.dtos.AssinaturaDTO;
 import com.monolitoclean.scaa.application.dtos.CodigosDTO;
 import com.monolitoclean.scaa.application.usecase.assinatura.*;
-import com.monolitoclean.scaa.repository.AssinaturaMemRepository;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.monolitoclean.scaa.domain.repository.IAssinaturaRepository;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,18 +18,22 @@ public class AssinaturaController {
     private ListarAssinaturasDoClienteUC listarAssinaturasDoCliente;
     private ListarAssinaturasDoAppUC listarAssinaturasDoApp;
     private VerificaAssinaturaUC verificaAssinatura;
+    private RabbitTemplate rabbitTemplate;
+    private IAssinaturaRepository iAssinaturaRepository;
 
     @Autowired
     public AssinaturaController(CadastraAssinaturaUC cadastraAssinatura,
                                 AssinaturasPorStatusUC assinaturasPorStatus,
                                 ListarAssinaturasDoClienteUC listarAssinaturasDoCliente,
                                 ListarAssinaturasDoAppUC listarAssinaturasDoApp,
-                                VerificaAssinaturaUC verificaAssinatura) {
+                                VerificaAssinaturaUC verificaAssinatura, RabbitTemplate rabbitTemplate, IAssinaturaRepository iAssinaturaRepository) {
         this.cadastraAssinatura = cadastraAssinatura;
         this.assinaturasPorStatus = assinaturasPorStatus;
         this.listarAssinaturasDoCliente = listarAssinaturasDoCliente;
         this.listarAssinaturasDoApp = listarAssinaturasDoApp;
         this.verificaAssinatura = verificaAssinatura;
+        this.rabbitTemplate = rabbitTemplate;
+        this.iAssinaturaRepository = iAssinaturaRepository;
     }
 
     @PostMapping("/assinaturas")
@@ -54,7 +57,7 @@ public class AssinaturaController {
     }
 
     @GetMapping("/invalidaass/{codass}")
-    public boolean verificaAssinatura(@PathVariable long codass){
-        return verificaAssinatura.run(codass);
+    public void verificaAssinatura(@PathVariable long codass){
+        rabbitTemplate.convertAndSend("atualiza-assinatura-queue", "", "teste");
     }
 }

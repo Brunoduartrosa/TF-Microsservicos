@@ -9,7 +9,8 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class RabbitMQConfig {
-    private static final String queueName = "scaa.v1.subscription-update.save-signature" + Math.random() * 1000;
+//    private static final String queueName = "scaa.v1.subscription-update.save-signature" + Math.random() * 1000;
+    private static final String queueName = "atualiza-assinatura-queue";
 
     @Bean
     public Queue uniqueQueue() {

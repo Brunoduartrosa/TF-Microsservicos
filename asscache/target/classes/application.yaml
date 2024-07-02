@@ -1,6 +1,10 @@
 spring:
   application:
     name: asscache
+  rabbitmq:
+    host: ${RABBITMQCONFIG_SERVICE_URL:localhost}
+    username: guest
+    password: guest
 server:
   port: 8082
 eureka:

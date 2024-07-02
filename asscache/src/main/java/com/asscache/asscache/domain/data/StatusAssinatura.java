@@ -35,8 +35,5 @@ public class StatusAssinatura {
                 .findFirst()
                 .ifPresent(ass -> ass.setFimVigencia(novoFimVigencia));
     }
-
-
-
 }
 
