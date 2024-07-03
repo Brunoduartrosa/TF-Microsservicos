@@ -1,41 +1,25 @@
-server:
-  port: 8765
 spring:
   application:
     name: gateway
   cloud:
     gateway:
-      discovery:
-        locator:
-          lower-case-service-id: true
-          enabled: true
       routes:
         - id: scaa
           uri: lb://scaa
           predicates:
-            - Path=/scaa/**
-          filters:
-            - RewritePath=/scaa/?(?<remaining>.*), /$\{remaining}
-        - id: asscache
-          uri: lb://asscache
+            - Path=/servcad/**
+        - id: pagamento-assinatura
+          uri: lb://pagamento-assinatura
           predicates:
-            - Path=/asscache/**
-          filters:
-            - RewritePath=/asscache/?(?<remaining>.*), /$\{remaining}
-  main:
-    web-application-type: reactive
+            - Path=/registrarpagamento/**
+        - id: status-assinatura
+          uri: lb://status-assinatura
+          predicates:
+            - path=/invalidaass/**
+server:
+  port: 8765
 eureka:
   client:
+    fetch-registry: false
     serviceUrl:
       defaultZone: ${EUREKA_SERVICE_URL:http://localhost:8761/eureka/}
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-  endpoint:
-    health:
-      show-details: always
-    gateway:
-      enabled: true

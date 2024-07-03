@@ -1,4 +1,11 @@
 FROM eclipse-temurin:21-jre-alpine
-COPY target/*.jar app.jar
-EXPOSE 8761
-ENTRYPOINT [ "java", "-jar", "/app.jar" ]
+
+WORKDIR app
+
+RUN apk add --no-cache maven
+
+COPY . .
+
+RUN mvn clean package spring-boot:repackage
+
+ENTRYPOINT [ "java", "-jar", "target/nameserver-0.0.1-SNAPSHOT.jar" ]

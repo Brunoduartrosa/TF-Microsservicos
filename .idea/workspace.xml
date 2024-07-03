@@ -4,16 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21053c24-aad3-4bcb-81e9-7bb2db7a7477" name="Changes" comment="adicionando RabbitMQConfig novamente">
+    <list default="true" id="21053c24-aad3-4bcb-81e9-7bb2db7a7477" name="Changes" comment="Atualizando o status assinatura">
+      <change afterPath="$PROJECT_DIR$/asscache/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nameserver/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asscache/src/main/java/com/asscache/asscache/AssinaturaProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/asscache/src/main/java/com/asscache/asscache/AssinaturaProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asscache/src/main/java/com/asscache/asscache/controller/AssinaturaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/asscache/src/main/java/com/asscache/asscache/controller/AssinaturaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asscache/src/main/java/com/asscache/asscache/domain/data/StatusAssinatura.java" beforeDir="false" afterPath="$PROJECT_DIR$/asscache/src/main/java/com/asscache/asscache/domain/data/StatusAssinatura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scaa/src/main/java/com/monolitoclean/scaa/controllers/assinaturas/AssinaturaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/scaa/src/main/java/com/monolitoclean/scaa/controllers/assinaturas/AssinaturaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scaa/src/main/java/com/monolitoclean/scaa/domain/entities/PagamentoModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/scaa/src/main/java/com/monolitoclean/scaa/domain/entities/PagamentoModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scaa/src/main/java/com/monolitoclean/scaa/domain/repository/IAssinaturaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/scaa/src/main/java/com/monolitoclean/scaa/domain/repository/IAssinaturaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scaa/src/main/java/com/monolitoclean/scaa/domain/services/PagamentoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/scaa/src/main/java/com/monolitoclean/scaa/domain/services/PagamentoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scaa/src/main/java/com/monolitoclean/scaa/repository/AssinaturaMemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/scaa/src/main/java/com/monolitoclean/scaa/repository/AssinaturaMemRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asscache/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/asscache/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asscache/src/main/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/asscache/target/classes/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/asscache/target/classes/com/asscache/asscache/AssinaturaProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/asscache/target/classes/com/asscache/asscache/AssinaturaProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asscache/target/classes/com/asscache/asscache/controller/AssinaturaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/asscache/target/classes/com/asscache/asscache/controller/AssinaturaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asscache/target/classes/com/asscache/asscache/domain/data/StatusAssinatura.class" beforeDir="false" afterPath="$PROJECT_DIR$/asscache/target/classes/com/asscache/asscache/domain/data/StatusAssinatura.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/target/classes/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nameserver/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/nameserver/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nameserver/src/main/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scaa/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/scaa/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scaa/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/scaa/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scaa/target/classes/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scaa/target/classes/com/monolitoclean/scaa/application/dtos/PagamentoDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/scaa/target/classes/com/monolitoclean/scaa/application/dtos/PagamentoDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scaa/target/classes/com/monolitoclean/scaa/controllers/assinaturas/AssinaturaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/scaa/target/classes/com/monolitoclean/scaa/controllers/assinaturas/AssinaturaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scaa/target/classes/com/monolitoclean/scaa/domain/entities/PagamentoModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/scaa/target/classes/com/monolitoclean/scaa/domain/entities/PagamentoModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scaa/target/classes/com/monolitoclean/scaa/domain/repository/IAssinaturaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/scaa/target/classes/com/monolitoclean/scaa/domain/repository/IAssinaturaRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scaa/target/classes/com/monolitoclean/scaa/domain/services/PagamentoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/scaa/target/classes/com/monolitoclean/scaa/domain/services/PagamentoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scaa/target/classes/com/monolitoclean/scaa/rabbitmq/RabbitMQConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/scaa/target/classes/com/monolitoclean/scaa/rabbitmq/RabbitMQConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scaa/target/classes/com/monolitoclean/scaa/repository/AssinaturaMemRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/scaa/target/classes/com/monolitoclean/scaa/repository/AssinaturaMemRepository.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +47,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="rabbitMQ" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -59,35 +75,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.AsscacheApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.NameserverApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ScaaApplication.executor&quot;: &quot;Run&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;G:/Meu Drive/PUCRS/Disciplinas em Andamento/Algorítmos e Estruturas de Dados I/T2-Alest&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.AsscacheApplication.executor": "Run",
+    "Spring Boot.GatewayApplication.executor": "Run",
+    "Spring Boot.NameserverApplication.executor": "Run",
+    "Spring Boot.ScaaApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Bruno/Downloads/history-service",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.asscache.asscache" />
@@ -152,6 +168,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.GatewayApplication" />
@@ -182,7 +204,10 @@
       <workItem from="1719873319073" duration="2269000" />
       <workItem from="1719957022278" duration="3522000" />
       <workItem from="1719973069402" duration="347000" />
-      <workItem from="1719974065082" duration="8772000" />
+      <workItem from="1719974065082" duration="9014000" />
+      <workItem from="1719983294589" duration="239000" />
+      <workItem from="1719983916797" duration="2670000" />
+      <workItem from="1719988219548" duration="8276000" />
     </task>
     <task id="LOCAL-00001" summary="Fazendo o RabbitMQ funcionar corretamente">
       <option name="closed" value="true" />
@@ -208,7 +233,23 @@
       <option name="project" value="LOCAL" />
       <updated>1719976503221</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Atualizando o status assinatura">
+      <option name="closed" value="true" />
+      <created>1719983189268</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1719983189268</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Atualizando o status assinatura">
+      <option name="closed" value="true" />
+      <created>1719983213359</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1719983213359</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +266,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="Last-chance" />
                       </list>
                     </value>
                   </entry>
@@ -241,6 +282,7 @@
     <MESSAGE value="Fazendo o RabbitMQ funcionar corretamente" />
     <MESSAGE value="arquivos" />
     <MESSAGE value="adicionando RabbitMQConfig novamente" />
-    <option name="LAST_COMMIT_MESSAGE" value="adicionando RabbitMQConfig novamente" />
+    <MESSAGE value="Atualizando o status assinatura" />
+    <option name="LAST_COMMIT_MESSAGE" value="Atualizando o status assinatura" />
   </component>
 </project>

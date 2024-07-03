@@ -1,34 +1,13 @@
-# Usar uma imagem base do Maven para construir o projeto
 FROM eclipse-temurin:21 AS build
 
-# Instalar o Maven
-RUN apt-get update && apt-get install -y maven
+RUN apk add --no-cache maven
 
-# Definir o diretório de trabalho dentro do container
-WORKDIR /app
+COPY . .
 
-# Copiar o arquivo pom.xml e outros arquivos de configuração para o diretório de trabalho
-COPY pom.xml .
+RUN mvn clean package spring-boot:repackage
 
-# Baixar as dependências do projeto (isso ajuda no cacheamento das dependências)
-RUN mvn dependency:go-offline -B
+RUN chmod +x target/gateway-0.0.1-SNAPSHOT.jar
 
-# Copiar o código fonte do projeto para o diretório de trabalho
-COPY src ./src
+EXPOSE: 8082
 
-# Construir o projeto e gerar o arquivo .jar
-RUN mvn clean package -DskipTests
-
-# Usar uma imagem base do Eclipse Temurin JDK 21 para rodar a aplicação
-FROM eclipse-temurin:21-jre-alpine
-
-# Definir o diretório de trabalho dentro do container
-WORKDIR /app
-
-# Copiar o arquivo .jar do estágio de build para o estágio final
-COPY --from=build /app/target/*.jar app.jar
-
-EXPOSE 8082
-
-# Comando para rodar a aplicação
-CMD ["java", "-jar", "app.jar"]
+CMD ["java", "-jar", "target/asscache-0.0.1-SNAPSHOT.jar"]
