@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class VerificaAssinaturaController {
 
-private VerificaAssinaturaUC verificaAssinatura;
+private final VerificaAssinaturaUC verificaAssinatura;
 
     public VerificaAssinaturaController(VerificaAssinaturaUC verificaAssinaturaUC) {
         this.verificaAssinatura = verificaAssinaturaUC;

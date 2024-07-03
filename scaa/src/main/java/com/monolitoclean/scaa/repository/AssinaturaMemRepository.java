@@ -68,9 +68,9 @@ public class AssinaturaMemRepository implements IAssinaturaRepository {
     }
 
     @Override
-    public AssinaturaModel buscaAssinaturaPorCodigo(long codigoDaAssinatura){
+    public AssinaturaModel buscaAssinaturaPorCodigo(long codass){
         for (AssinaturaModel aux:assinaturas) {
-            if (aux.getCodigo() == codigoDaAssinatura){
+            if (aux.getCodigo() == codass){
                 return aux;
             }
         }
@@ -79,12 +79,17 @@ public class AssinaturaMemRepository implements IAssinaturaRepository {
 
 
     //Inserir convertAndSend
+//    @Override
+    public AssinaturaModel atualizaAssinatura(AssinaturaModel assinaturaModel, LocalDate novaData) {
+        assinaturaModel.setFimVigencia(novaData);
+        rabbitTemplate.convertAndSend("atualiza-assinatura", "", new AtualizaAssinatura(assinaturaModel.getCodigo(), novaData));
+        return assinaturaModel;
+    }
+
+    //Inserir convertAndSend
     @Override
     public AssinaturaModel atualizaAssinatura(long codAssinatura, LocalDate novaData) {
         AssinaturaModel assinaturaModel = buscaAssinaturaPorCodigo(codAssinatura);
-        assinaturaModel.setFimVigencia(novaData);
-
-        rabbitTemplate.convertAndSend("atualiza-assinatura", "", new AtualizaAssinatura(codAssinatura, novaData));
-        return assinaturaModel;
+        return atualizaAssinatura(assinaturaModel, novaData);
     }
 }

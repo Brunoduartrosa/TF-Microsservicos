@@ -7,15 +7,15 @@ spring:
         - id: scaa
           uri: lb://scaa
           predicates:
-            - Path=/servcad/**
-        - id: pagamento-assinatura
-          uri: lb://pagamento-assinatura
+            - Path=/scaa/**
+          filters:
+          - RewritePath=/scaa/?(?<remaining>.*), /$\{remaining}
+        - id: asscache
+          uri: lb://asscache
           predicates:
-            - Path=/registrarpagamento/**
-        - id: status-assinatura
-          uri: lb://status-assinatura
-          predicates:
-            - path=/invalidaass/**
+            - Path=/asscache/**
+          filters:
+            - RewritePath=/asscache/?(?<remaining>.*), /$\{remaining}
 server:
   port: 8765
 eureka:
@@ -23,3 +23,8 @@ eureka:
     fetch-registry: false
     serviceUrl:
       defaultZone: ${EUREKA_SERVICE_URL:http://localhost:8761/eureka/}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

@@ -16,7 +16,7 @@ services:
     build:
       context: ./nameserver
     ports:
-      - 8761
+      - 8761:8761
     hostname: nameserver
     networks:
       - eureka
@@ -24,6 +24,7 @@ services:
     environment:
       - EUREKA_SERVICE_URL=http://nameserver:8761/eureka/
       - RABBITMQ_SERVICE_URL=rabbitmq
+      - RABBITMQ_SERVICE_PORT=15672
     build:
       context: ./asscache
     ports:
@@ -41,6 +42,7 @@ services:
     environment:
       - EUREKA_SERVICE_URL=http://nameserver:8761/eureka/
       - RABBITMQ_SERVICE_URL=rabbitmq
+      - RABBITMQ_SERVICE_PORT=15672
     build:
       context: ./scaa
     ports:

@@ -10,7 +10,8 @@ public interface IAssinaturaRepository {
     List<AssinaturaModel> listarAssinaturas();
     List<AssinaturaModel> listarAssinaturasPorCodCliente(long codigoDoCliente);
     List<AssinaturaModel> listarAssinaturasPorCodAplicativo(long codigoDoAplicativo);
-    AssinaturaModel buscaAssinaturaPorCodigo(long codigoDaAssinatura);
-    AssinaturaModel atualizaAssinatura(long codAssinatura, LocalDate novaData);
+    AssinaturaModel buscaAssinaturaPorCodigo(long codass);
+    AssinaturaModel atualizaAssinatura(long codass, LocalDate novaData);
+    AssinaturaModel atualizaAssinatura(AssinaturaModel assinaturaModel, LocalDate novaData);
 
 }

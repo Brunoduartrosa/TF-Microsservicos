@@ -24,9 +24,10 @@ public class AssinaturaService {
         return assinaturaRepository.listarAssinaturasPorCodCliente(codCliente);
     }
 
-    public boolean verificaAssinatura(long codAssinatura) {
-        AssinaturaModel assinaturaModel = assinaturaRepository.buscaAssinaturaPorCodigo(codAssinatura);
+    public boolean verificaAssinatura(long codass) {
+        AssinaturaModel assinaturaModel = assinaturaRepository.buscaAssinaturaPorCodigo(codass);
         if(assinaturaModel != null){
+            assinaturaRepository.atualizaAssinatura(assinaturaModel, assinaturaModel.getFimVigencia());
             return true;
         }
         return false;
