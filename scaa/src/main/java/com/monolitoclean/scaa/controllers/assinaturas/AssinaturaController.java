@@ -58,6 +58,6 @@ public class AssinaturaController {
 
     @GetMapping("/invalidaass/{codass}")
     public void verificaAssinatura(@PathVariable long codass){
-        rabbitTemplate.convertAndSend("atualiza-assinatura-queue", "", "teste");
+        rabbitTemplate.convertAndSend("atualiza-assinatura", "", "teste");
     }
 }

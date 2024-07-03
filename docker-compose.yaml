@@ -22,7 +22,6 @@ services:
     hostname: nameserver
     networks:
       - eureka
-
   asscache:
     environment:
       - EUREKA_SERVICE_URL=http://nameserver:8761/eureka/
@@ -33,23 +32,24 @@ services:
       - 8082
     networks:
       - eureka
+      - rabbitmq
     deploy:
       replicas: 3
     depends_on:
       - nameserver
-      - scaa
       - rabbitmq
+      - scaa
   scaa:
     environment:
       - EUREKA_SERVICE_URL=http://nameserver:8761/eureka/
       - RABBITMQCONFIG_SERVICE_URL=rabbitmq
-
     build:
       context: ./scaa
     ports:
       - 8081:8081
     networks:
       - eureka
+      - rabbitmq
     depends_on:
       - nameserver
       - rabbitmq
