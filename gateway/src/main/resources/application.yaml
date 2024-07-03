@@ -15,13 +15,13 @@ spring:
           predicates:
             - Path=/scaa/**
           filters:
-            - RewritePath=/scaa/?(?<remaining>.*), /$\{remaining}
+            - RewritePath=/scaa/?(?<remaining>.*), /${remaining}
         - id: asscache
           uri: lb://asscache
           predicates:
             - Path=/asscache/**
           filters:
-            - RewritePath=/asscache/?(?<remaining>.*), /$\{remaining}
+            - RewritePath=/asscache/?(?<remaining>.*), /${remaining}
   main:
     web-application-type: reactive
 eureka:

@@ -12,5 +12,5 @@ import java.time.LocalDate;
 public interface AssinaturaProxy {
 
     @GetMapping("/servcad/verificadata/{codass}")
-    LocalDate atualizaAssinatura(@PathVariable long codass);
+    LocalDate atualizaAssinatura(@PathVariable("codass") long codass);
 }

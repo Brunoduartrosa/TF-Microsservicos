@@ -55,10 +55,11 @@ public class AssinaturaController {
 
     @GetMapping("/verificadata/{codapp}")
     public LocalDate getDataAssinatura(@PathVariable long codass){
-        AssinaturaModel assinaturaModel = assinaturaRepository.buscaAssinaturaPorCodigo(codass);
-        if(assinaturaModel == null){
-            return null;
-        }
-        return assinaturaModel.getFimVigencia();
+        return LocalDate.now();
+//        AssinaturaModel assinaturaModel = assinaturaRepository.buscaAssinaturaPorCodigo(codass);
+        //      if(assinaturaModel == null){
+        //  return null;
+        //}
+        //return assinaturaModel.getFimVigencia();
     }
 }
