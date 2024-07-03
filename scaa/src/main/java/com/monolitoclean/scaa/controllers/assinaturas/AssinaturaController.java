@@ -19,7 +19,7 @@ public class AssinaturaController {
     private AssinaturasPorStatusUC assinaturasPorStatus;
     private ListarAssinaturasDoClienteUC listarAssinaturasDoCliente;
     private ListarAssinaturasDoAppUC listarAssinaturasDoApp;
-    private IAssinaturaRepository assinaturaRepository
+    private IAssinaturaRepository assinaturaRepository;
 
     @Autowired
     public AssinaturaController(CadastraAssinaturaUC cadastraAssinatura,
