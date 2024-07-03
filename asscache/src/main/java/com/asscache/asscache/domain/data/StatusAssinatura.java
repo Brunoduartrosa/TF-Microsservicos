@@ -24,11 +24,12 @@ public class StatusAssinatura {
                 .map(AssinaturaModel::getFimVigencia)
                 .findFirst()
                 .orElseGet(() -> {
-                    LocalDate fimVigencia = assinaturaProxy.verificaAssinatura(codass);
+                    LocalDate fimVigencia = assinaturaProxy.atualizaAssinatura(codass);
                     assinaturas.add(new AssinaturaModel(codass, fimVigencia));
                     return fimVigencia;
                 });
     }
+
     public void atualizaStatusAssinatura(long codass, LocalDate novoFimVigencia) {
         assinaturas.stream()
                 .filter(ass -> ass.getCodigo() == codass)

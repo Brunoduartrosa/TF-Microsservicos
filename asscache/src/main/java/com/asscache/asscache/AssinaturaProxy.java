@@ -11,6 +11,6 @@ import java.time.LocalDate;
 @FeignClient(name = "scaa")
 public interface AssinaturaProxy {
 
-    @GetMapping("/servcad/invalidaass/{codass}")
-    LocalDate verificaAssinatura(@PathVariable long codass);
+    @GetMapping("/servcad/verificadata/{codass}")
+    LocalDate atualizaAssinatura(@PathVariable long codass);
 }

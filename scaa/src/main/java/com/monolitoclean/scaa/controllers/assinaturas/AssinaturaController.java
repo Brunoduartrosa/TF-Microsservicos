@@ -3,11 +3,13 @@ package com.monolitoclean.scaa.controllers.assinaturas;
 import com.monolitoclean.scaa.application.dtos.AssinaturaDTO;
 import com.monolitoclean.scaa.application.dtos.CodigosDTO;
 import com.monolitoclean.scaa.application.usecase.assinatura.*;
+import com.monolitoclean.scaa.domain.entities.AssinaturaModel;
 import com.monolitoclean.scaa.domain.repository.IAssinaturaRepository;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @RestController
@@ -17,23 +19,18 @@ public class AssinaturaController {
     private AssinaturasPorStatusUC assinaturasPorStatus;
     private ListarAssinaturasDoClienteUC listarAssinaturasDoCliente;
     private ListarAssinaturasDoAppUC listarAssinaturasDoApp;
-    private VerificaAssinaturaUC verificaAssinatura;
-    private RabbitTemplate rabbitTemplate;
-    private IAssinaturaRepository iAssinaturaRepository;
+    private IAssinaturaRepository assinaturaRepository
 
     @Autowired
     public AssinaturaController(CadastraAssinaturaUC cadastraAssinatura,
                                 AssinaturasPorStatusUC assinaturasPorStatus,
                                 ListarAssinaturasDoClienteUC listarAssinaturasDoCliente,
-                                ListarAssinaturasDoAppUC listarAssinaturasDoApp,
-                                VerificaAssinaturaUC verificaAssinatura, RabbitTemplate rabbitTemplate, IAssinaturaRepository iAssinaturaRepository) {
+                                ListarAssinaturasDoAppUC listarAssinaturasDoApp, IAssinaturaRepository assinaturaRepository) {
         this.cadastraAssinatura = cadastraAssinatura;
         this.assinaturasPorStatus = assinaturasPorStatus;
         this.listarAssinaturasDoCliente = listarAssinaturasDoCliente;
         this.listarAssinaturasDoApp = listarAssinaturasDoApp;
-        this.verificaAssinatura = verificaAssinatura;
-        this.rabbitTemplate = rabbitTemplate;
-        this.iAssinaturaRepository = iAssinaturaRepository;
+        this.assinaturaRepository = assinaturaRepository;
     }
 
     @PostMapping("/assinaturas")
@@ -56,8 +53,12 @@ public class AssinaturaController {
         return listarAssinaturasDoApp.run(codapp);
     }
 
-    @GetMapping("/invalidaass/{codass}")
-    public void verificaAssinatura(@PathVariable long codass){
-        rabbitTemplate.convertAndSend("atualiza-assinatura", "", "teste");
+    @GetMapping("/verificadata/{codapp}")
+    public LocalDate getDataAssinatura(@PathVariable long codass){
+        AssinaturaModel assinaturaModel = assinaturaRepository.buscaAssinaturaPorCodigo(codass);
+        if(assinaturaModel == null){
+            return null;
+        }
+        return assinaturaModel.getFimVigencia();
     }
 }

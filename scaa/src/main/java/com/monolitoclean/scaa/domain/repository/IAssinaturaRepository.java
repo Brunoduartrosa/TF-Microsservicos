@@ -2,6 +2,7 @@ package com.monolitoclean.scaa.domain.repository;
 
 import com.monolitoclean.scaa.domain.entities.AssinaturaModel;
 
+import java.time.LocalDate;
 import java.util.List;
 
 public interface IAssinaturaRepository {
@@ -10,4 +11,6 @@ public interface IAssinaturaRepository {
     List<AssinaturaModel> listarAssinaturasPorCodCliente(long codigoDoCliente);
     List<AssinaturaModel> listarAssinaturasPorCodAplicativo(long codigoDoAplicativo);
     AssinaturaModel buscaAssinaturaPorCodigo(long codigoDaAssinatura);
+    AssinaturaModel atualizaAssinatura(long codAssinatura, LocalDate novaData);
+
 }

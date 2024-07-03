@@ -4,14 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21053c24-aad3-4bcb-81e9-7bb2db7a7477" name="Changes" comment="arquivos">
+    <list default="true" id="21053c24-aad3-4bcb-81e9-7bb2db7a7477" name="Changes" comment="adicionando RabbitMQConfig novamente">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asscache/src/main/java/com/asscache/asscache/consumer/AssinaturaRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/asscache/src/main/java/com/asscache/asscache/consumer/AssinaturaRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asscache/target/classes/com/asscache/asscache/consumer/AssinaturaRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asscache/src/main/java/com/asscache/asscache/AssinaturaProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/asscache/src/main/java/com/asscache/asscache/AssinaturaProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asscache/src/main/java/com/asscache/asscache/controller/AssinaturaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/asscache/src/main/java/com/asscache/asscache/controller/AssinaturaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asscache/src/main/java/com/asscache/asscache/domain/data/StatusAssinatura.java" beforeDir="false" afterPath="$PROJECT_DIR$/asscache/src/main/java/com/asscache/asscache/domain/data/StatusAssinatura.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scaa/src/main/java/com/monolitoclean/scaa/controllers/assinaturas/AssinaturaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/scaa/src/main/java/com/monolitoclean/scaa/controllers/assinaturas/AssinaturaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scaa/src/main/java/com/monolitoclean/scaa/rabbitmq/RabbitMQConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/scaa/src/main/java/com/monolitoclean/scaa/rabbitmq/RabbitMQConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scaa/target/classes/com/monolitoclean/scaa/controllers/assinaturas/AssinaturaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/scaa/target/classes/com/monolitoclean/scaa/controllers/assinaturas/AssinaturaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scaa/src/main/java/com/monolitoclean/scaa/domain/entities/PagamentoModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/scaa/src/main/java/com/monolitoclean/scaa/domain/entities/PagamentoModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scaa/src/main/java/com/monolitoclean/scaa/domain/repository/IAssinaturaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/scaa/src/main/java/com/monolitoclean/scaa/domain/repository/IAssinaturaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scaa/src/main/java/com/monolitoclean/scaa/domain/services/PagamentoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/scaa/src/main/java/com/monolitoclean/scaa/domain/services/PagamentoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scaa/src/main/java/com/monolitoclean/scaa/repository/AssinaturaMemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/scaa/src/main/java/com/monolitoclean/scaa/repository/AssinaturaMemRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Record" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -180,7 +182,7 @@
       <workItem from="1719873319073" duration="2269000" />
       <workItem from="1719957022278" duration="3522000" />
       <workItem from="1719973069402" duration="347000" />
-      <workItem from="1719974065082" duration="2371000" />
+      <workItem from="1719974065082" duration="8772000" />
     </task>
     <task id="LOCAL-00001" summary="Fazendo o RabbitMQ funcionar corretamente">
       <option name="closed" value="true" />
@@ -198,7 +200,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719798014588</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="adicionando RabbitMQConfig novamente">
+      <option name="closed" value="true" />
+      <created>1719976503220</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1719976503221</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +240,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fazendo o RabbitMQ funcionar corretamente" />
     <MESSAGE value="arquivos" />
-    <option name="LAST_COMMIT_MESSAGE" value="arquivos" />
+    <MESSAGE value="adicionando RabbitMQConfig novamente" />
+    <option name="LAST_COMMIT_MESSAGE" value="adicionando RabbitMQConfig novamente" />
   </component>
 </project>
